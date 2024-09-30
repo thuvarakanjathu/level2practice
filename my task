@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pricing Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            ;
+        }
+        
+        .pricing-table {
+            max-width: 800px;
+            margin: auto;
+            background-color: antiquewhite;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: rgb(255, 255, 255);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+        tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        @media (max-width: 600px) {
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+            thead {
+                display: none;
+            }
+            tr {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 15px;
+            }
+            td {
+                display: block;
+                text-align: right;
+                padding: 20px;
+                border: none; 
+            }
+            td:nth-of-type(1) {
+                text-align: left; 
+                font-weight: bold; 
+            }
+            td::before {
+                content: attr(data-label);
+                float: left;
+                font-weight: bold;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <center>
+            <img src="kajoo.jpg" alt="Thuva Online Store Logo" class="rounded-circle">
+            <div>
+                <h1>Thuva Online Store</h1>
+                <h2>Reach shoppers who are looking for products like yours.</h2>
+            </div>
+        </center>
+    </header>
+    <section class="pricing-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Plan</th>
+                    <th>Price</th>
+                    <th>Features</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Basic</td>
+                    <td>500Rs</td>
+                    <td>
+                        <ul>
+                            <li>3rd market shoe</li>
+                            <li>3rd market bag</li>
+                            <li>3rd market dress</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Standard</td>
+                    <td>1000Rs</td>
+                    <td>
+                        <ul>
+                            <li>2nd market shoe</li>
+                            <li>2nd market bag</li>
+                            <li>2nd market dress</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Premium</td>
+                    <td>1500Rs</td>
+                    <td>
+                        <ul>
+                            <li>1st market shoe</li>
+                            <li>1st market bag</li>
+                            <li>1st market dress</li> <!-- Updated this line -->
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>
