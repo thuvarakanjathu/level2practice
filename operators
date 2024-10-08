@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            background-color: yellow;
+            padding: 10px;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Operators</h1>
+    <p>
+    1.arithmetic operators
+    </p>
+    <script>
+        let a=10;
+        let b=2;
+        let c=a+b;
+        let d=a-b;
+        let e=a*b;
+        let f=a/b;
+        let g=a%b;
+        let h=a++;
+        let i=a--;
+        
+      document.write('addition operator '+ c+"<br>");      
+        document.write( "Subtraction "+ d+"<br>");       
+        document.write("Multiplication "+e +"<br>");      
+        document.write("Division "+f +"<br>");      
+        document.write("Modulus "+f +"<br>");      
+        document.write("Exponentiation "+g +"<br>");     
+        document.write("Floor Division "+h +"<br>");       
+        document.write("Unary Negation "+i +"<br>");
+
+    </script>
+    <p>
+        2.comparision
+    </p>
+    <script>
+        document.write("<br>");
+        let x=7;
+        let y=6;
+        document.write(x==y);
+        document.write("<br>");
+        document.write(x!=y);
+        document.write("<br>");
+        document.write(x===y);
+        document.write("<br>");
+        document.write(x+y);
+        document.write("<br>");
+        document.write(x!==y);
+        document.write("<br>");
+        document.write(x>y);
+    </script>
+   <p>03. Logical Operators</p>
+   <script>
+     let s = 5;
+     let t = 10;
+     document.write(s > 10 && t > 5);
+     document.write("<br>");
+     document.write(s > 1 || t > 5);
+   </script>
+   <p>04. Assignment Operetors</p>
+   <script>
+     let n = 5;
+     let p = 1;
+     n += p;
+     document.write(n);
+   </script>
+    <p>.05ternery</p>
+    <script>
+       document.write("<br>");
+        let l=5;
+        let m=6
+        document.write(p>3 ? yes : no);
+        document.write("<br>");
+        document.write(n>5 ? yes : no);
+
+    </script>
+
+    
+</body>
+</html>
