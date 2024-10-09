@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>type operator</h1>
+    <h2>parseInt</h2>
+    <script>
+        let a = "mathu";
+       let b = "5";
+        let c = "10";
+        document.write(parseInt(b) + parseInt(c));
+
+    </script>
+    <br>
+    <script>
+        document.write("<br>");
+       
+        let x = 10;
+        let y;
+        y = y ?? 2;
+        document.write(x / y);
+        
+
+    </script>
+    <h1>if else</h1>
+    <script>
+        let thuvaa = true;
+        if (!thuvaa) {
+            document.write("thuva ready to give presentation");
+        }
+        else {
+            document.write("he is not");
+        }
+
+    </script>
+    <h1>if condition</h1>
+     <script>
+       
+        let jathu = 80;
+        if (jathu > 75) {
+          document.write("jathu is above 70");
+        } else if (jathu < 75 && jathu > 50) {
+          document.write("jathu is in second stage");
+        } else {
+          document.write("jathu is in third stage");
+        }
+        document.write("<br>");
+        document.write("After if condition");
+      
+      </script>
+   
+
+    <h1>for loop</h1>
+    <script>
+        let limit = 5;
+for (let i = 0; i < limit; i++) {
+   document.write(i)
+}
+    </script>
+   
+</body>
+
+</html>
