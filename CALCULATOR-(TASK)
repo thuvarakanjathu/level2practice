@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <h1><u>Calculator</u></h1>
+</head>
+
+<body>
+    <input type="number" id="input1" placeholder="Enter first number">
+    <input type="number" id="input2" placeholder="Enter second number">
+    
+    <button id="minus" onclick="subtract()">-</button>
+    <button id="plus" onclick="addition()">+</button>
+    <button id="divide" onclick="divide()">/</button>
+    <button id="multiply" onclick="multiply()">*</button>
+
+    <h1 id="result">Result: 0</h1>
+
+    <script>
+        function addition() {
+            let num1 = parseFloat(document.getElementById('input1').value);
+            let num2 = parseFloat(document.getElementById('input2').value);
+            if (!isNaN(num1) && !isNaN(num2)) {
+                let sum = num1 + num2;
+                document.getElementById("result").innerHTML = "Result: " + sum;
+            } else {
+                document.getElementById("result").innerHTML = "Please enter valid numbers!";
+            }
+        }
+
+        function subtract() {
+            let num1 = parseFloat(document.getElementById('input1').value);
+            let num2 = parseFloat(document.getElementById('input2').value);
+            if (!isNaN(num1) && !isNaN(num2)) {
+                let difference = num1 - num2;
+                document.getElementById("result").innerHTML = "Result: " + difference;
+            } else {
+                document.getElementById("result").innerHTML = "Please enter valid numbers!";
+            }
+        }
+
+        function divide() {
+            let num1 = parseFloat(document.getElementById('input1').value);
+            let num2 = parseFloat(document.getElementById('input2').value);
+            if (!isNaN(num1) && !isNaN(num2) && num2 !== 0) {
+                let quotient = num1 / num2;
+                document.getElementById("result").innerHTML = "Result: " + quotient;
+            } else {
+                document.getElementById("result").innerHTML = "Please enter valid numbers and ensure the divisor is not zero!";
+            }
+        }
+
+        function multiply() {
+            let num1 = parseFloat(document.getElementById('input1').value);
+            let num2 = parseFloat(document.getElementById('input2').value);
+            if (!isNaN(num1) && !isNaN(num2)) {
+                let product = num1 * num2;
+                document.getElementById("result").innerHTML = "Result: " + product;
+            } else {
+                document.getElementById("result").innerHTML = "Please enter valid numbers!";
+            }
+        }
+    </script>
+</body>
+
+</html>
