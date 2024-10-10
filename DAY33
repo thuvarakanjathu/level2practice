@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day33</title>
+  </head>
+  <body>
+    <button id="minus" onclick="decrease()">-</button>
+    <button id="plus" onclick="increase()">+</button>
+    <h1 id="thuvaa">0</h1>
+
+    <script>
+      function increase() {
+        let a = document.getElementById("thuvaa").innerText;
+        console.log(a);
+        document.getElementById("thuvaa").innerHTML = parseInt(a) + 1;
+      }
+      function decrease() {
+        let a = document.getElementById('thuvaa').innerText;
+        console.log(a);
+        document.getElementById('thuvaa').innerHTML=parseInt(a)-1
+      }
+    </script>
+  </body>
+</html>
