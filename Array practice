@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>JavaScript Array Practice</h1>
+    <input type="text" id="adding" />
+    <br />
+    <button onclick="addmethod()">Add</button>
+    <p id="thuva"></p>
+    <p id="reverse"></p>
+    <!-- <p class="reverse"></p>
+    <p class="reverse"></p> -->
+    <script>
+      const Names = [];
+      function addmethod() {
+        let a = document.getElementById("adding").value;
+        console.log(a);
+        Names.push(a);
+        document.getElementById("thuva").innerHTML = Names;
+      }
+    </script>
+    <script>
+      const Numbers = [1, 6, 5, 3, 8, 9];
+      Numbers.sort();
+      Numbers.reverse();
+      document.getElementById("reverse").innerHTML = Numbers;
+    </script>
+  </body>
+</html>
